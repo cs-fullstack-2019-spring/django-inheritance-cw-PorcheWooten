@@ -1,0 +1,32 @@
+{% extends 'CodeCrewApp/base.html' %}
+
+{% load static %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+<header>
+    <nav>
+    <a href="{% url 'index' %}">In-School Electives</a>
+    <a href="{% url 'about' %}">After-School programs</a>
+    <a href="{% url 'gallery' %}">Exposure Events</a>
+    <a href="{% url 'resources' %}">Code School</a>
+    <a href="{% url 'contact' %}">Internship</a>
+</nav>
+</header>
+<section>
+    <img src="{% static 'images/meka.jpeg' %}" alt="people">
+    <h2>Discover Our After School Programs
+    & Get Registered Today</h2>
+<p>Our programs expose students to producing technology and provide them in-depth training that keeps them interested and engaged across a continuum of subjects and grade levels.</p>
+</section>
+
+<article>
+    <img src="{% static 'images/kevin.jpeg' %}" alt="people">
+    <h2>Get CodeCrew Programs
+        at Your School or Organization</h2>
+    <p>Partner with us and make computer science and tech education available to the students you serve at your school or organization.</p>
+</article>
+{% endblock content %}

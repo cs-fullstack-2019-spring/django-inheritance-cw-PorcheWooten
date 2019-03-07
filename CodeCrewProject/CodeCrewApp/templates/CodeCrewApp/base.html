@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+{% load static %}
+<nav>
+    <a href="{% url 'index' %}"><img src="../../static/images/logo.jpeg" height="225" width="225"/></a>
+    <a href="{% url 'index' %}">Home</a>
+    <a href="{% url 'about' %}">About Us</a>
+    <a href="{% url 'gallery' %}">Gallery</a>
+    <a href="{% url 'resources' %}">Resources</a>
+    <a href="{% url 'contact' %}">Contact</a>
+</nav>
+
+{% block content %}
+
+{% endblock content %}
+
+{% block footer %}
+88 Union Avenue, 2nd Floor, Memphis, TN 38103  |  901-229-1720  | team@code-crew.org  |  #GritGrindCode
+{% endblock footer %}
+
+</body>
+</html>
